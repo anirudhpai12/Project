@@ -1,0 +1,148 @@
+/*Poppins - Sans Serif font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400&display=swap');
+/*OpenSans - Sans Serif font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+  h1{
+    @apply text-4xl
+  }
+
+  h2{
+    @apply text-xl
+  }
+
+  h3{
+    @apply text-lg
+  }
+
+  h4{
+    @apply text-base
+  }
+
+  h1{
+    @apply text-sm
+  }
+}
+
+@layer components{
+  .row-flex{
+    @apply flex flex-row items-center
+  }
+  
+  .col-flex{
+    @apply flex flex-col items-center
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+}
+
+.loader{
+  background-color: #04021D;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.bg_grid{
+  background: url('../public/images/grid_pattern.png');
+  background-size: 100% 100%;
+  backdrop-filter: blur(0px) saturate(99%);
+}
+
+.menu{
+  border-radius: 0 5px 5px 0;
+}
+
+.container-radial{
+  background: radial-gradient(farthest-side at 0% -20%, rgb(3, 72, 150) -25%, rgba(2,0,36,1) 50%,  rgb(4, 2, 29, 1) 95%);
+}
+
+.radial{
+  background: radial-gradient(circle farthest-side at 150% 0%, rgba(3, 70, 148, 1) -25%, rgba(2,0,36,1) 50%,  rgb(4, 2, 29, 1) 95%);
+}
+
+.navbar-radial{
+  background: radial-gradient(circle farthest-side at -20% 0%, rgba(3, 70, 148, 1) -25%, rgba(2,0,36,1) 50%,  rgb(4, 2, 29, 1) 95%);
+}
+
+.reverse-navbar-radial {
+  background: radial-gradient(circle farthest-side at 80% 0%, rgba(3, 70, 148, 1) -25%, rgba(2, 0, 36, 1) 50%, rgb(4, 2, 29, 1) 95%);
+}
+
+.signin-radial{
+  background: radial-gradient(circle farthest-side at 150% 0%, rgba(3, 70, 148, 1) -25%, rgb(33, 32, 62) 50%, rgb(200, 199, 216) 95%);
+}
+
+.glassmorphism {
+  backdrop-filter: blur(9px) saturate(99%);
+  -webkit-backdrop-filter: blur(9px) saturate(99%);
+  background-color: rgba(35, 57, 101, 0.24);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.glassmorphism-ideal {
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(99%);
+  background-color: rgba(35, 57, 101, 0);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.mask{
+  mask-image: linear-gradient(to top left, transparent 0%, black 75%);;
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button,{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number-input[type=number] {
+  -moz-appearance: textfield;
+}
